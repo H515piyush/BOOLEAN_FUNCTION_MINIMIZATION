@@ -37,25 +37,39 @@ Hardware – PCs, Cyclone II , USB flasher
 
 Developed by:Piyush kumar 
 RegisterNumber:212223220075
+
 */
+```
+module Boolean_min(A,B,C,D,W,X,Y,Z,F1,F2);
+input A,B,C,D,W,X,Y,Z;
+wire x1,x2,x3,x4,x5,x6,x7,x8,x9,x10;
+output F1,F2;
+assign x1=(~A)&(~B)&(~C)&(~D);
+assign x2=(A)&(~C)&(~D);
+assign x3=(~B)&(C)&(~D);
+assign x4=(~A)&(B)&(C)&(D);
+assign x5=(B)&(~C)&(D);
+assign x6=(X)&(~Y)&(Z);
+assign x7=(~X)&(~Y)&(Z);
+assign x8=(~W)&(X)&(Y);
+assign x9=(W)&(~X)&(Y);
+assign x10=(W)&(X)&(Y);
+assign F1=x1|x2|x3|x4|x5;
+assign F2=x6|x7|x8|x9|x10;
+endmodule
+```
+
 
 
 **RTL realization**
+![319427331-4d407a87-3dc2-49e6-bea8-bb7683f1857d](https://github.com/H515piyush/BOOLEAN_FUNCTION_MINIMIZATION/assets/147472999/45544f59-44fb-44bf-afb3-d662b13181b4)
+
+
 
 **Output:**
-OUTPUT FOR
-1.F1= A’B’C’D’+AC’D’+B’CD’+A’BCD+BC’D
 
-![Screenshot 2024-03-12 144559](https://github.com/H515piyush/BOOLEAN_FUNCTION_MINIMIZATION/assets/147472999/1498647a-e92a-485f-9038-0ccb570fb8ea)
-![Screenshot 2024-03-12 144916](https://github.com/H515piyush/BOOLEAN_FUNCTION_MINIMIZATION/assets/147472999/b3070590-81e8-4e44-88d8-b28560259a51)
-2.F2=xy’z+x’y’z+w’xy+wx’y+wxy
-HERE X=A, Y=B , Z=C AND W=D
+![319427514-042b4487-4220-4e63-a855-f1475debf723](https://github.com/H515piyush/BOOLEAN_FUNCTION_MINIMIZATION/assets/147472999/a96105b9-6729-495e-ba5a-0c8990f036b7)
 
-![Screenshot 2024-03-12 195916](https://github.com/H515piyush/BOOLEAN_FUNCTION_MINIMIZATION/assets/147472999/6b7cf7c7-2805-453e-aea5-86ac489eb020)
-![Screenshot 2024-03-12 200307](https://github.com/H515piyush/BOOLEAN_FUNCTION_MINIMIZATION/assets/147472999/0d7b14ca-fe77-4f56-bd7b-3ae7745af73e)
-
-
-**Timing Diagram**
 
 **Result:**
 
