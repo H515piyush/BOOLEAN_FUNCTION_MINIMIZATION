@@ -68,7 +68,8 @@ endmodule
 
 **Output:**
 
-![319427514-042b4487-4220-4e63-a855-f1475debf723](https://github.com/H515piyush/BOOLEAN_FUNCTION_MINIMIZATION/assets/147472999/a96105b9-6729-495e-ba5a-0c8990f036b7)
+![boolean edited waveform](https://github.com/H515piyush/BOOLEAN_FUNCTION_MINIMIZATION/assets/147472999/0ebc73f1-4672-4971-a22c-8ce643bbd937)
+
 
 
 **Result:**
